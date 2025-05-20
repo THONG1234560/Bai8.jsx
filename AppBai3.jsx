@@ -1,15 +1,15 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Login from "./component/Login";
+import NotFound from "./component/NotFound";
 import "bootstrap/dist/css/bootstrap.min.css";
 const App = () => {
   return (
     <Router>
-      <div className="d-flex flex-column align-items-center justify-content-center vh-100 bg-light">
+
         <Routes>
-          <Route path="/" element={<Login />} />
+          <Route path="/" element={<NotFound />} />
         </Routes>
-      </div>
     </Router>
   );
 };
