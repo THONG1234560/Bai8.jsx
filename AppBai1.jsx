@@ -1,10 +1,13 @@
-const Home = () => {
-    return (
-        <div>
-            <h1>Đây là trang chủ</h1>
-            <a href="">Source Code</a>
-        </div>
-    );
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./component/Home";
+const App = () => {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </Router>
+  );
 };
 
-export default Home;
+export default App;
